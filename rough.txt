@@ -1,0 +1,25 @@
+Size hasMany->SKU
+SKU belongsTo->Size
+
+Color hasMany -> SKU
+SKU belongsTo -> Color
+
+Product hasMany->SKU
+SKU belongsTo->Product
+
+SKU hasOne->inventory
+Inventory belongsTo->SKU
+
+/**********************
+One Size has many SKU
+one sku has one Size
+
+One Color has many SKU
+one SKU has one Color
+
+One SKU has one Product
+One Product has many SKU
+
+one SKU has one Inventory
+one Inventory belongsTo one SKU
+*******************************/
